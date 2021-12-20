@@ -1,0 +1,148 @@
+body {
+    background: #333;
+    margin: 0;
+}
+
+.head-container {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    padding: .2rem;
+    margin-top: .5rem;
+    margin-bottom: 1.9rem;
+}
+
+.content-wrapper {   
+    display:flex;
+    justify-content:start ;
+    align-content: stretch;
+}
+
+.content-wrapper .edit-wrapper {
+    width: 52%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+}
+
+.content-wrapper .edit-wrapper .style-wrapper { 
+    width:90%;    
+    flex-basis:5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: start;   
+    padding-bottom: .1rem;
+    border-bottom: .08rem solid #aaa;
+}
+
+.content-wrapper .edit-wrapper .style-wrapper .style-center { 
+    width:40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.content-wrapper .edit-wrapper .infos-wrapper {
+    width:90%;  
+    flex-basis: 70%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: start;
+   
+}
+
+.content-wrapper .edit-wrapper .infos-wrapper .style-center {
+    width:40%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+}
+
+
+
+.content-wrapper .edit-wrapper .infos-wrapper .style-center .info-wrapper {
+    width: 80%;
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    align-content: center;
+}
+
+.content-wrapper .edit-wrapper .infos-wrapper .style-center .info-wrapper .input-area {
+    height: 1.8rem;
+    margin-top: 0.5rem;
+    background-color: #222;
+    color:white;   
+    border:1px solid #d2d2d2;
+}
+
+.content-wrapper .edit-wrapper .infos-wrapper .style-center .info-wrapper .input-area:focus  {
+    border-style:solid;
+    border-color: #03a9f4;
+    outline: none;
+	box-shadow: 0 0 15px #03a9f4;
+
+}
+
+
+/* left-side    */
+
+
+
+
+.content-wrapper .display-wrapper {
+    width:30%;
+    height:100%;
+    background: lightblue;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.content-wrapper .display-wrapper div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.content-wrapper .display-wrapper .upper-names-wrapper{
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+}
+
+.content-wrapper .display-wrapper .invited-content-fixed{
+    margin-bottom: 1rem;
+    font-size: .9rem;
+}
+
+.content-wrapper .display-wrapper .couple-name-wrapper{
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.content-wrapper .display-wrapper .guest-name-wrapper{
+    margin-bottom: 2.4rem;
+    font-size: 1.8rem;
+}
+
+.content-wrapper .display-wrapper  .arrive-date-wrapper{
+    margin-bottom: 1.5rem;
+    font-size: .8rem;
+}
+
+.content-wrapper .display-wrapper  .wedding-location-wrapper{
+    margin-bottom: 2.8rem;
+    font-size: 1.2rem;
+}

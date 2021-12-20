@@ -5,8 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <H1>Long  wedding Invitation Planner Hello world!</H1>
+   
+    <!-- https://leozhang2016.github.io/Long_wedding_Invitation_Planner/ -->
+
+    <Header class="head-container">
+        Wedding Invitation Designer
+    </Header>
+
+    <section class="content-wrapper">
+        <section class="edit-wrapper">
+               <div class="style-wrapper"> 
+                   <div class="style-center">
+                       <div class="design-style">Formal</div>
+                        <div class="design-style">Spring</div>
+                        <div class="design-style">Art Deco</div>
+                   </div>
+               </div> 
+
+               <div class="infos-wrapper">
+                  <div class="style-center style-start">
+                        <div class="info-wrapper">
+                            <label for="first-name">1st Name:</label>
+                            <input type="text" class="input-area" id="first-name"  oninput="nameChange()">
+                        </div>
+                        <div class="info-wrapper">
+                            <label for="second-name">2nd Name:</label>
+                            <input type="text" class="input-area" id="second-name">
+                        </div>
+                        <div class="info-wrapper">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" class="input-area" id="last-name">
+                        </div>
+                        <div class="info-wrapper">
+                            <label for="date-wedding">Date Name:</label>
+                            <input type="text" class="input-area" id="date-wedding">
+                        </div>
+                        <div class="info-wrapper">
+                            <label for="location-wedding">Wedding Location:</label>
+                            <input type="text" class="input-area" id="location-wedding">
+                        </div>                                        
+                  </div>
+               </div>
+        </section>
+
+
+        <section class="display-wrapper">
+              <div class="upper-names-wrapper" id="upper-names"></div>
+              <div class="invited-content-fixed" id="invited-content">You are cordially invited to the wedding of </div>
+              <div class="couple-name-wrapper" id="couple-name">Mary & John</div>
+              <div class="guest-name-wrapper" id="guest-name">Smith</div>
+              <div class="arrive-date-wrapper"  id="arrive-date">07/07/2020</div>
+              <div class="wedding-location-wrapper" id="wedding-location">Blooming Hill</div>
+        </section>
+    </section>
+
+    <script src='index.js'></script>
+
+    
 </body>
 </html>
