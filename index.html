@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Invitation</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Kavoon&family=Mea+Culpa&family=Oooh+Baby&family=Oswald:wght@300;400;500&family=Twinkle+Star&display=swap" rel="stylesheet"> <link rel="stylesheet" href="./index.css">
 </head>
 <body>
    
@@ -19,9 +21,9 @@
         <section class="edit-wrapper">
                <div class="style-wrapper"> 
                    <div class="style-center">
-                       <div class="design-style">Formal</div>
-                        <div class="design-style">Spring</div>
-                        <div class="design-style">Art Deco</div>
+                        <div class="design-style" id="formal" onclick="formalClick()">Formal</div>
+                        <div class="design-style" id="spring" onclick="springClick()">Spring</div>
+                        <div class="design-style" id="art-deco" onclick="artClick()">Art Deco</div>
                    </div>
                </div> 
 
@@ -29,36 +31,40 @@
                   <div class="style-center style-start">
                         <div class="info-wrapper">
                             <label for="first-name">1st Name:</label>
-                            <input type="text" class="input-area" id="first-name"  oninput="nameChange()">
+                            <input type="text" class="input-area" id="bride-name"  oninput="brideNameChange(),brideCoupleName()">
                         </div>
                         <div class="info-wrapper">
                             <label for="second-name">2nd Name:</label>
-                            <input type="text" class="input-area" id="second-name">
+                            <input type="text" class="input-area" id="groom-name" oninput="groomNameChange(),groomCoupleName()">
                         </div>
                         <div class="info-wrapper">
                             <label for="last-name">Last Name:</label>
-                            <input type="text" class="input-area" id="last-name">
+                            <input type="text" class="input-area" id="guest-name" oninput="guestNameChange()">
                         </div>
                         <div class="info-wrapper">
                             <label for="date-wedding">Date Name:</label>
-                            <input type="text" class="input-area" id="date-wedding">
+                            <input type="text" class="input-area" id="date-wedding" oninput="dateWeddingChange()">
                         </div>
                         <div class="info-wrapper">
                             <label for="location-wedding">Wedding Location:</label>
-                            <input type="text" class="input-area" id="location-wedding">
+                            <input type="text" class="input-area" id="location-wedding"  oninput="locationWeddingChange()">
                         </div>                                        
                   </div>
                </div>
         </section>
 
 
-        <section class="display-wrapper">
-              <div class="upper-names-wrapper" id="upper-names"></div>
+        <section class="display-wrapper display-wrapper-default" id="display-wrapper">
+              <div class="upper-names-wrapper" id="upper-first-names"></div>
               <div class="invited-content-fixed" id="invited-content">You are cordially invited to the wedding of </div>
-              <div class="couple-name-wrapper" id="couple-name">Mary & John</div>
-              <div class="guest-name-wrapper" id="guest-name">Smith</div>
-              <div class="arrive-date-wrapper"  id="arrive-date">07/07/2020</div>
-              <div class="wedding-location-wrapper" id="wedding-location">Blooming Hill</div>
+              <div class="couple-name-wrapper" id="couple-name"> 
+                   <div id="bride-couple-name"></div> 
+                   <div class="middle-and-couple">  &nbsp;  &  &nbsp; </div>
+                   <div id="groom-couple-name"></div> 
+                </div>
+              <div class="guest-name-wrapper" id="guest-name-display"></div>
+              <div class="arrive-date-wrapper"  id="date-wedding-display"></div>
+              <div class="wedding-location-wrapper" id="location-wedding-display"></div>
         </section>
     </section>
 

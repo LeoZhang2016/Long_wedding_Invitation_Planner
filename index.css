@@ -1,11 +1,11 @@
 body {
     background: #333;
     margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .head-container {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: center;
     padding: .2rem;
@@ -81,6 +81,7 @@ body {
     height: 1.8rem;
     margin-top: 0.5rem;
     background-color: #222;
+
     color:white;   
     border:1px solid #d2d2d2;
 }
@@ -96,13 +97,65 @@ body {
 
 /* left-side    */
 
+/* default style  */
 
-
-
-.content-wrapper .display-wrapper {
-    width:30%;
+.content-wrapper .display-wrapper-default {
+    width:40%;
     height:100%;
-    background: lightblue;
+
+    font-family: 'Oswald';
+    font-weight: 400;
+    background: linear-gradient(to bottom, #e9c3c3 0%,#f73e3e 100%); 
+    
+
+    /* font-family: 'Oooh Baby';
+    font-weight: 600;
+    background: url("./background/leaf.jpg") center no-repeat; */
+
+    /* font-family: 'Mea Culpa';
+    font-weight: 600;
+    background: url("./background/rose.jpg") center no-repeat; */
+
+    /* background: lightblue; */
+    /* background: linear-gradient(to bottom, #e9c3c3 0%,#f73e3e 100%); */
+    /* background: url("./background/leaf.jpg") no-repeat; */
+  
+    /* background: url("./background/leaf.jpg") center no-repeat; */
+    background-size:100% 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+  /* customer  style of spring  */
+.springStyle {
+    
+    width:40%;
+    height:100%;
+
+    font-family: 'Oooh Baby';
+    font-weight: 600;
+    background: url("./background/leaf.jpg") center no-repeat;
+
+    background-size:100% 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+  /* customer  style of art Deco  */
+  .artStyle {
+    
+    width:40%;
+    height:100%;
+
+    font-family: 'Mea Culpa';
+    font-weight: 600;
+    background: url("./background/rose.jpg") center no-repeat; 
+
+    background-size:100% 100%;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -130,19 +183,36 @@ body {
 .content-wrapper .display-wrapper .couple-name-wrapper{
     margin-bottom: 3rem;
     font-size: 2rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    
 }
+
+.content-wrapper .display-wrapper .couple-name-wrapper .middle-and-couple {
+    font-size: 0.9rem; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;   
+    padding-bottom: .35rem;  
+
+}
+
 
 .content-wrapper .display-wrapper .guest-name-wrapper{
     margin-bottom: 2.4rem;
     font-size: 1.8rem;
 }
 
-.content-wrapper .display-wrapper  .arrive-date-wrapper{
-    margin-bottom: 1.5rem;
-    font-size: .8rem;
+.content-wrapper .display-wrapper  .arrive-date-wrapper{   
+    font-size: .9rem;
+    margin-bottom: 0.8rem;
 }
 
 .content-wrapper .display-wrapper  .wedding-location-wrapper{
+    margin-top: -0.5rem;
     margin-bottom: 2.8rem;
     font-size: 1.2rem;
 }
