@@ -130,7 +130,7 @@ body {
   /* customer  style of spring  */
 .springStyle {
     
-    width:40%;
+    width:38%;
     height:100%;
 
     font-family: 'Oooh Baby';
@@ -182,7 +182,7 @@ body {
 
 .content-wrapper .display-wrapper .couple-name-wrapper{
     margin-bottom: 3rem;
-    font-size: 2rem;
+    font-size: 1.9rem;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -207,7 +207,7 @@ body {
 }
 
 .content-wrapper .display-wrapper  .arrive-date-wrapper{   
-    font-size: .9rem;
+    font-size: 1.1rem;
     margin-bottom: 0.8rem;
 }
 
