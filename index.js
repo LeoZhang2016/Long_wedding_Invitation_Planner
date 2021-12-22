@@ -1,15 +1,3 @@
-function dian(){
-
-    // console.log('11111');
-
-    // document.getElementById('first-name1').style.background = 'red';
-    // document.getElementById('first-name1').style.border = '6px solid green';
-
-    // console.log(document.getElementById('first-name1'));
-    
-    // '1px solid red';
-
-};
 
 function brideNameChange() {   
     let brideFirstName = document.getElementById("bride-name").value;
