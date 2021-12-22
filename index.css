@@ -156,7 +156,8 @@ body {
     font-family: 'Mea Culpa';
     font-weight: 600;
     /* background: url("./background/rosefadding.jpg") center no-repeat;                */
-    background: url("./background/rose.jpg") center no-repeat;               
+    /* background: url("./background/rose.jpg") center no-repeat;                */
+    background: url("./background/Sliver.jpg") center no-repeat;               
 
     background-size:100% 100%;
     display:flex;
@@ -173,7 +174,7 @@ body {
 }
 
 .content-wrapper .display-wrapper .upper-names-wrapper{
-    margin-top: 11.9rem;
+    margin-top: 15.8rem;
     margin-bottom: 3.0rem;
     font-size: 2rem;
 }
